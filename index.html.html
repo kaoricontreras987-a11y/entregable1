@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Académico - SENATI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header-institucional">
+        <h1>SENATI - San Ramón</h1>
+        <p>Solución Web Institucional para el Registro y Promoción Académica</p>
+    </header>
+
+    <main class="container">
+        
+        <div class="card-formulario">
+            <h3>Ficha de Inscripción</h3>
+          
+            <form id="formRegistro" action="#" method="POST" novalidate>
+              
+                <div class="form-group">
+                    <label for="nombre" class="form-label">Apellidos y Nombres:</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingresa tus nombres completos" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="correo" class="form-label">Correo Electrónico:</label>
+                    <input type="email" class="form-control" id="correo" placeholder="ejemplo@correo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono" class="form-label">Teléfono / Celular:</label>
+                    <input type="number" class="form-control" id="telefono" placeholder="Ej: 987654321" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="carrera" class="form-label">Carrera de Interés:</label>
+                    <select class="form-select" id="carrera" required>
+                        <option value="" disabled selected>Seleccione su carrera...</option>
+                        <option value="software">Ingeniería de Software con IA</option>
+                        <option value="administracion">Administración de Empresas</option>
+                        <option value="electricidad">Electricidad Industrial</option>
+                        <option value="mecatronica">Mecatrónica Automotriz</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar Registro</button>
+
+            </form>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
